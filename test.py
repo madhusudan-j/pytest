@@ -13,7 +13,7 @@ def find_possible_ways(n_days, missed_days, missed_days_allowed, possible_ways, 
     print("n_days=", n_days, "missed_days=", missed_days, "miss_possible_ways=", miss_possible_ways, "no_miss_possible_ways=", no_miss_possible_ways)
     return missed_grads + miss_count + no_miss_count, miss_possible_ways + no_miss_possible_ways
 
-n_days = 10
+n_days = 5
 missed_days_allowed = 3
 missed_grads = 0 
 possible_ways = []
