@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MTC-Versions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="\static\style.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+{% if load_versions %}
+<body onload="javascript:tableFromJson({{ mtc_versions|safe }});">
+<div class="container">
+    <div id="myDIV" class="col-sm-6">
+    <h2>Overview of all MTC Versions</h2>
+    </div>
+    <div id="usedtoolsdiv" class="col-sm-6">
+    <h2 id="toolshead"></h2>
+    <table id="toolstable"></table>
+    </div>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='createtables.js') }}"></script>
+</body>
+{% endif %}
+
+<body>
+    <div id="cardDiv">
+    </div>
+  
+</body>
+
+
+</html>
+
